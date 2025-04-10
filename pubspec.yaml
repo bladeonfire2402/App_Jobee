@@ -21,6 +21,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   google_fonts: ^6.2.1
   card_swiper : ^3.0.0
+  shadcn_ui: ^0.24.0
 
 
 dev_dependencies:

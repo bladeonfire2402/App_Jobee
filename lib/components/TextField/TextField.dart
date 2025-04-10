@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:my_app_test/Utils/Constants/color__constant.dart';
 
 class MyTextfield extends StatelessWidget {
   final TextEditingController controller;
@@ -33,12 +35,11 @@ class MyTextfield extends StatelessWidget {
             ),
           ),
           hintText: hintText,
-          hintStyle: TextStyle(
-            color: Theme.of(context).colorScheme.primary,
-            fontFamily: "Roboto",
-            fontSize: 15,
-
-          ),
+          hintStyle: GoogleFonts.poppins( // Sử dụng Google Font "Roboto"
+          fontSize: 16,
+          fontWeight: FontWeight.normal,
+          color: ColorConstants.textColor, // Sử dụng màu chính từ ColorConstants
+      ), //
         ),
       ),
     );
