@@ -40,12 +40,13 @@ class _InputState extends State<Input> {
       obscureText: obscure,
       cursorWidth: 1,
       leading: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(12.0),
         child: Icon(widget.icon ?? LucideIcons.lock), // Sử dụng icon được truyền vào hoặc mặc định
       ),
       decoration: ShadDecoration(
         focusedBorder: const ShadBorder(
-          padding: EdgeInsets.all(2)
+          padding: EdgeInsets.all(2),
+          radius: const BorderRadius.all(Radius.circular(20))
         
         ),
       ),

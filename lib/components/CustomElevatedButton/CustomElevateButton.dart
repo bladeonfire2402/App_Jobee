@@ -32,7 +32,10 @@ class Customelevatebutton extends StatelessWidget {
         
         child: Text(
           text,
-          style: TextStyle(color: textColor), // Đặt màu chữ ở đây
+          style: TextStyle(
+            color: textColor,
+            fontSize: 20
+            ), // Đặt màu chữ ở đây
         ),
       ),
     );

@@ -7,12 +7,10 @@ import 'package:my_app_test/components/TextField/TextFieldVer2.dart';
 import 'package:my_app_test/components/TitleComponents/Subtitle.dart';
 import 'package:my_app_test/components/TitleComponents/largeTitle.dart';
 
-class Registerscreen  extends StatelessWidget{
+class Loginscreen  extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     final TextEditingController emailController = TextEditingController();
-    final TextEditingController phoneController = TextEditingController();
-    final TextEditingController fullnameController = TextEditingController();
     final TextEditingController passwordController = TextEditingController();
     return Scaffold(
       body: Padding(
@@ -33,35 +31,29 @@ class Registerscreen  extends StatelessWidget{
 
               TitleH2(text: "Jobee",color: ColorConstants.primaryColor,),
 
+              SizedBox(height: 10),
+
               Row(
                 spacing: 5,
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    'Registration',
+                    'Welcome Back',
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 25,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  Icon(Icons.thumb_up, color: ColorConstants.primaryColor,),
+                  Icon(Icons.accessibility_new_outlined, color: ColorConstants.primaryColor,size: 30,),
                 ],
               ),
 
               Align(
-               child: Subtitle(text: "Let’s Register. Apply to jobs!",color: ColorConstants.textColor3,),
+               child: Subtitle(text: "Let’s log in. Apply to jobs!",color: ColorConstants.textColor3,),
                 alignment: Alignment.centerLeft,
               ),
 
-              SizedBox(height: 10),
-
-              
-              Input(
-                icon: Icons.account_circle,
-                hintText: 'Fullname',
-                controller: fullnameController
-              ),
-
+        
               SizedBox(height: 10),
 
               
@@ -71,9 +63,6 @@ class Registerscreen  extends StatelessWidget{
                 controller: emailController
               ),
 
-              SizedBox(height: 10),
-
-
               Input(
                 icon: Icons.password,
                 hintText: 'Password',
@@ -82,19 +71,13 @@ class Registerscreen  extends StatelessWidget{
 
               SizedBox(height: 10),
 
-              
-              Input(
-                icon: Icons.phone,
-                hintText: 'Phone',
-                controller: phoneController
-              ),
-
               SizedBox(height: 40),
 
               SizedBox(
                 width: double.infinity,
                 child: Customelevatebutton(
-                  text: "Register", color: ColorConstants.primaryColor,
+                  text: "Log in", 
+                  color: ColorConstants.primaryColor,
                    textColor: ColorConstants.textColor2,
                     onPressed: ()=>{}),
               ),
@@ -114,7 +97,7 @@ class Registerscreen  extends StatelessWidget{
                       
                     ),),
                   ),
-                  Subtitle(text: "Or register with",color: ColorConstants.textColor3,),
+                  Subtitle(text: "Or login with",color: ColorConstants.textColor3,),
                    Expanded(
                     flex: 1,
                     child: Container(
@@ -138,20 +121,22 @@ class Registerscreen  extends StatelessWidget{
                 ],  
               ),
 
-              SizedBox(height: 10),
+              SizedBox(height: 10), 
+
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Subtitle(text: "Already have an account?",color: ColorConstants.textColor3,),
+                  Subtitle(text: "Dont have an account?",color: ColorConstants.textColor3,),
                   TextButton(
                     onPressed: () {
                       // Navigate to the login screen
                     },
                     child: Text(
-                      'Login',
+                      'Register',
                       style: TextStyle(
                         color: ColorConstants.primaryColor,
+                        fontSize: 20,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
