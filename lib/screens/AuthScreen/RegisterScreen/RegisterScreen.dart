@@ -2,11 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:my_app_test/Utils/Constants/color__constant.dart';
 import 'package:my_app_test/components/CustomElevatedButton/CustomElevateButton.dart';
-import 'package:my_app_test/components/TextField/TextField.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:my_app_test/components/TextField/TextFieldVer2.dart';
 import 'package:my_app_test/components/TitleComponents/Subtitle.dart';
-import 'package:my_app_test/components/TitleComponents/Title.dart';
 import 'package:my_app_test/components/TitleComponents/largeTitle.dart';
 
 class Registerscreen  extends StatelessWidget{

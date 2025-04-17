@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_app_test/layout.dart';
+import 'package:my_app_test/applications/app.dart';
+
 
 void main() {
-  runApp(MaterialApp(
-    home: RootLayout(),
-    debugShowCheckedModeBanner: false,
-  ));
+  runApp(const Application());
 }
 
