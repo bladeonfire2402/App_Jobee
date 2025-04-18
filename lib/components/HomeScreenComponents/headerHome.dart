@@ -21,21 +21,34 @@ class Headerhome extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
             children: [
-              Subtitle(text: "Welcome to Jobee!",color: ColorConstants.textColor3,),
+              Subtitle(text: "Welcome Jobeer!",color: ColorConstants.textColor3,),
               SizedBox(height: 4.0), // Space between subtitle and user name
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Mediumtitle(text: userName),
+                  Mediumtitle(text: userName,color: ColorConstants.textPrimary,),
                   SizedBox(width: 8.0), // Space between user name and icon
-                  Icon(Icons.auto_awesome, size: 30),
+                  Icon(Icons.auto_awesome, size: 30,color: Color.fromARGB(255, 252, 252, 84),),
                 ],
               ),
             ],
           ),
-          CircleAvatar(
-            radius: 20, // Set the size of the avatar
-            backgroundImage: CustomNetworkImage(avatar),
+          ClipOval(
+            child: Container(
+              height: 78,
+              width: 78,
+              color: ColorConstants.fourthlyColor,
+              child: Center(
+                child: SizedBox(
+                  height: 70,
+                  width: 70,
+                  child: CircleAvatar(
+                    radius: 20, // Set the size of the avatar
+                    backgroundImage: CustomNetworkImage(avatar),
+                  ),
+                ),
+              ),
+            ),
           ),
         ],
       ),
