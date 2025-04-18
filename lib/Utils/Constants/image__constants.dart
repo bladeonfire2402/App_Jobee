@@ -16,5 +16,5 @@ class ImageConstants {
   static const String FailVerify =
       'https://res.cloudinary.com/dzrev1jgw/image/upload/v1744875421/11104_eucubh.jpg';
   static const String companyLogo = 
-  'https://i.pinimg.com/736x/8e/36/ad/8e36ade0a770afc81f9afe9c0eb98be4.jpg';
+  'https://cdn-icons-png.flaticon.com/512/281/281764.png';
 }

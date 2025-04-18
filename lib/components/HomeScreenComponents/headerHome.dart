@@ -21,8 +21,8 @@ class Headerhome extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.start, // Align text to the left
             children: [
-              Subtitle(text: "Welcome Jobeer!",color: ColorConstants.textColor3,),
-              SizedBox(height: 4.0), // Space between subtitle and user name
+              Subtitle(text: "Welcome Jobeer !",color: ColorConstants.textColor3,),
+              
               Row(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -35,13 +35,13 @@ class Headerhome extends StatelessWidget {
           ),
           ClipOval(
             child: Container(
-              height: 78,
-              width: 78,
+              height: 70,
+              width: 70,
               color: ColorConstants.fourthlyColor,
               child: Center(
                 child: SizedBox(
-                  height: 70,
-                  width: 70,
+                  height: 65,
+                  width: 65,
                   child: CircleAvatar(
                     radius: 20, // Set the size of the avatar
                     backgroundImage: CustomNetworkImage(avatar),

@@ -10,7 +10,6 @@ import 'package:my_app_test/components/TitleComponents/mediumTitle.dart';
 class FeatureHome extends StatelessWidget {
 const FeatureHome({ Key? key }) : super(key: key);
 
-
   @override
   Widget build(BuildContext context){
     final double screenWidth = MediaQuery.of(context).size.width;
@@ -32,11 +31,11 @@ const FeatureHome({ Key? key }) : super(key: key);
               Subtitle(text: "See all",color: ColorConstants.textColor3,)
             ],
           ),
-          SizedBox(height: 10,),
+          SizedBox(height: 15,),
 
           Container(
             width: screenWidth,
-            height: 240 , 
+            height: 215 , 
             child: Swiper(
               itemBuilder: (BuildContext context,int index){
                 return FeaturedJobCard(
@@ -55,10 +54,9 @@ const FeatureHome({ Key? key }) : super(key: key);
               pagination: SwiperPagination(
                 builder: DotSwiperPaginationBuilder(
                   color: ColorConstants.bgGray,
-                  activeColor: ColorConstants.primaryColor,
+                  activeColor: const Color.fromARGB(255, 130, 201, 246),
                 ),
               )
-           
             ),
           ),
 
