@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:my_app_test/screens/AuthScreen/LoginScreen/LoginScreen.dart';
-
 import 'package:my_app_test/screens/AuthScreen/RegisterScreen/RegisterScreen.dart';
 import 'package:my_app_test/screens/AuthScreen/VerifyEmail/VerifyEmailScreen.dart';
 import 'package:my_app_test/screens/AuthScreen/VerifyFail/VerifyFailScreen.dart';

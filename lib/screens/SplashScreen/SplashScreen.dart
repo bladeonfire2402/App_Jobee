@@ -55,7 +55,6 @@ class _SplashscreenState extends State<Splashscreen> with SingleTickerProviderSt
             child: Column(
               children: <Widget>[
                 Image(image: CustomNetworkImage(ImageConstants.logo),width: 100,height: 100,),
-                
                 TitleWidgetH1(text: 'Jobee',color: ColorConstants.textColor2),
               ],
             ),
