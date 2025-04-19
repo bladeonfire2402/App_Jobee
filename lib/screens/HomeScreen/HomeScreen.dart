@@ -27,24 +27,17 @@ class Homescreen extends StatelessWidget {
 
               //Phần Searchbar
               Searchhome(),
-
-              
               SizedBox(height: 30,),
 
               //Phần feature 
               FeatureHome(),
-
               SizedBox(height: 20,),
 
               //Phần recommendJob
               RecommendHome()
-              
 
-
-              ],
-            
-            
-          ),
+              ],         
+         ),
 
         ),
       ),

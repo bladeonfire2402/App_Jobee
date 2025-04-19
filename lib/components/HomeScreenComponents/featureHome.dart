@@ -44,7 +44,7 @@ const FeatureHome({ Key? key }) : super(key: key);
                     companyLogo: ImageConstants.companyLogo,
                     jobTags: ["Design","Fulltime","Junior"],
                     jobSalary: 2000,
-                    jobLocation: "Californha,USA",
+                    jobLocation: "California,USA",
                     category: "IT",
                     );
                 },
@@ -59,8 +59,6 @@ const FeatureHome({ Key? key }) : super(key: key);
               )
             ),
           ),
-
-
         ],
       ),
     );
