@@ -19,7 +19,19 @@ class ImageConstants {
       'https://cdn-icons-png.flaticon.com/512/281/281764.png';
 }
 
+
 class MyImage {
-  static const base_assets = 'assets/imges';
-  static const fragment_bg = '$base_assets/igm.png';
+  static const base_assets = 'assets/images'; 
+  static const fragment_bg1 = '$base_assets/frag1.png';
+  static const fragment_bg2 = '$base_assets/frag2.png';
+  static const fragment_bg3 = '$base_assets/frag3.png';
+  static const fragment_bg4 = '$base_assets/frag4.png';
+  static const fragment_bg5 = '$base_assets/frag5.png';
+  static const fragment_bg6 = '$base_assets/frag6.png';
+  static const fragment_bg7 = '$base_assets/frag7.png';
+  static const fragment_bg8 = '$base_assets/frag8.png';
+  static const fragment_bg9 = '$base_assets/frag9.png';
+  static const fragment_bg10 = '$base_assets/frag10.png';
+  static const fragment_bg11 = '$base_assets/frag11.png';
 }
+
