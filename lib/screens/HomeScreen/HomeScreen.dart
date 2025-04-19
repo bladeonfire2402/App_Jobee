@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:my_app_test/Utils/Constants/image__constants.dart';
 import 'package:my_app_test/components/HomeScreenComponents/featureHome.dart';
 import 'package:my_app_test/components/HomeScreenComponents/headerHome.dart';
+import 'package:my_app_test/components/HomeScreenComponents/popularHome.dart';
 import 'package:my_app_test/components/HomeScreenComponents/recommendHome.dart';
 import 'package:my_app_test/components/HomeScreenComponents/searchHome.dart';
 
@@ -34,8 +35,10 @@ class Homescreen extends StatelessWidget {
               SizedBox(height: 20,),
 
               //Phần recommendJob
-              RecommendHome()
+              RecommendHome(),
+              SizedBox(height: 20,),
 
+              Popularhome(),
               ],         
          ),
 

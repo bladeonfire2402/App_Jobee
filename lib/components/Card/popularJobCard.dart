@@ -7,17 +7,17 @@ import 'package:my_app_test/components/ImageComponents/customImage.dart';
 import 'package:my_app_test/components/TitleComponents/customTitle.dart';
 import 'package:my_app_test/models/JobModels/JobModel.dart';
 
-class Recommendjobcard extends StatefulWidget {
+class Popularjobcard extends StatefulWidget {
   final JobModel job;
   final int index;
 
-  Recommendjobcard({super.key, required this.job, required this.index});
+  Popularjobcard({super.key, required this.job, required this.index});
 
   @override
-  _RecommendjobcardState createState() => _RecommendjobcardState();
+  _PopularjobcardState createState() => _PopularjobcardState();
 }
 
-class _RecommendjobcardState extends State<Recommendjobcard> {
+class _PopularjobcardState extends State<Popularjobcard> {
   Color? bgColor = ColorConstants.thirdlyColor;
   late int descion;
 
@@ -63,36 +63,54 @@ class _RecommendjobcardState extends State<Recommendjobcard> {
     return Stack(
       children: <Widget>[
         Container(
-          margin: const EdgeInsets.only(right: 15),
-          width: 165,
-          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
+          margin: const EdgeInsets.only(bottom: 15),
+          width: double.infinity,
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
           decoration: BoxDecoration(
-            color: bgColor,
+            color: ColorConstants.bgGray,
             borderRadius: const BorderRadius.all(Radius.circular(12)),
           ),
-          child: Column(
-            spacing: 7,
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: Row(
+            spacing: 10,
+            mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Image(
-                width: 50,
-                height: 50,
+                width: 40,
+                height: 40,
                 image: CustomNetworkImage(widget.job.companyLogo)),
               SizedBox(height: 1,),
-              CustomTitle(
-                color: ColorConstants.textColor, 
-                fontSize: 17, text: widget.job.title,
-                 fontWeight: FontWeight.w400),
-              CustomTitle(
-                color: ColorConstants.textColor3, 
-                fontSize: 12, text: widget.job.companyName,
-                 fontWeight: FontWeight.w200),
-              SizedBox(height: 5,),
-              CustomTitle(
-                color: ColorConstants.textColor, 
-                fontSize: 16, text: widget.job.salary,
-                fontWeight: FontWeight.w400),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                CustomTitle(
+                  color: ColorConstants.textColor, 
+                  fontSize: 17, text: widget.job.title,
+                  fontWeight: FontWeight.w400),
+                CustomTitle(
+                  color: ColorConstants.textColor3, 
+                  fontSize: 12, text: widget.job.companyName,
+                  fontWeight: FontWeight.w200),
+                ],
+              ),
+
+              SizedBox(width: 20,),
+
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                CustomTitle(
+                  color: ColorConstants.textColor, 
+                  fontSize: 16, text: widget.job.salary,
+                  fontWeight: FontWeight.w400),
+                CustomTitle(
+                  color: ColorConstants.textColor3, 
+                  fontSize: 12, text: "USA",
+                  fontWeight: FontWeight.w400),
+
+              ],),
+
             ],
           ),
         ),

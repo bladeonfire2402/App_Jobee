@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:my_app_test/Utils/Constants/color__constant.dart';
 import 'package:my_app_test/Utils/Data/job_Data.dart';
 import 'package:my_app_test/components/Card/RecommendJobCard.dart';
+import 'package:my_app_test/components/Card/popularJobCard.dart';
 import 'package:my_app_test/components/TitleComponents/Subtitle.dart';
 
 class Popularhome extends StatelessWidget {
@@ -34,15 +35,15 @@ class Popularhome extends StatelessWidget {
           SizedBox(height: 15,),
 
           Container(
-            height: 200,
+            height: 300,
+            width: double.infinity,
             alignment: Alignment.centerLeft,
             child: ListView.builder(
-              itemCount: JobData.jobList.length,
-              shrinkWrap: true,
-              scrollDirection: Axis.horizontal,
+              physics: const NeverScrollableScrollPhysics(),
+              itemCount: 3,              
               itemBuilder: (context, index) {
                 var job = JobData.jobList[index];
-                return Recommendjobcard(job: job,index: index+1,);
+                return Popularjobcard(job: job,index: index+1,);
               },
             ),
           ),
