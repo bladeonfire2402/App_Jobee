@@ -31,10 +31,10 @@ class RecommendHome extends StatelessWidget {
             ],
           ),
 
-          SizedBox(height: 10,),
+          SizedBox(height: 15,),
 
           Container(
-            height: 100,
+            height: 200,
             alignment: Alignment.centerLeft,
             child: ListView.builder(
               itemCount: JobData.jobList.length,
@@ -42,7 +42,7 @@ class RecommendHome extends StatelessWidget {
               scrollDirection: Axis.horizontal,
               itemBuilder: (context, index) {
                 var job = JobData.jobList[index];
-                return Recommendjobcard(Job: job,index: index+1,);
+                return Recommendjobcard(job: job,index: index+1,);
               },
             ),
           ),

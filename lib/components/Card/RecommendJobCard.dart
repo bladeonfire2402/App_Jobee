@@ -8,10 +8,10 @@ import 'package:my_app_test/components/TitleComponents/customTitle.dart';
 import 'package:my_app_test/models/JobModels/JobModel.dart';
 
 class Recommendjobcard extends StatefulWidget {
-  final JobModel Job;
+  final JobModel job;
   final int index;
 
-  Recommendjobcard({super.key, required this.Job, required this.index});
+  Recommendjobcard({super.key, required this.job, required this.index});
 
   @override
   _RecommendjobcardState createState() => _RecommendjobcardState();
@@ -20,6 +20,8 @@ class Recommendjobcard extends StatefulWidget {
 class _RecommendjobcardState extends State<Recommendjobcard> {
   Color? bgColor = ColorConstants.thirdlyColor;
   late int descion;
+
+
 
   // Handle background color change based on decision
   Color handleBgColor(int descion) {
@@ -61,12 +63,38 @@ class _RecommendjobcardState extends State<Recommendjobcard> {
     return Stack(
       children: <Widget>[
         Container(
-          padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 20),
+          margin: const EdgeInsets.only(right: 15),
+          width: 165,
+          padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
           decoration: BoxDecoration(
             color: bgColor,
             borderRadius: const BorderRadius.all(Radius.circular(12)),
           ),
-          child: Column(children: [Text('${widget.index}')]),
+          child: Column(
+            spacing: 7,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Image(
+                width: 45,
+                height: 45,
+                image: CustomNetworkImage(widget.job.companyLogo)),
+              SizedBox(height: 3,),
+              CustomTitle(
+                color: ColorConstants.textColor, 
+                fontSize: 17, text: widget.job.title,
+                 fontWeight: FontWeight.w400),
+              CustomTitle(
+                color: ColorConstants.textColor3, 
+                fontSize: 12, text: widget.job.companyName,
+                 fontWeight: FontWeight.w200),
+              SizedBox(height: 5,),
+              CustomTitle(
+                color: ColorConstants.textColor, 
+                fontSize: 16, text: widget.job.salary,
+                fontWeight: FontWeight.w400),
+            ],
+          ),
         ),
       ],
     );

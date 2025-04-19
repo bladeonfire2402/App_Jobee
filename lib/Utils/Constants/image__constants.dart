@@ -17,11 +17,16 @@ class ImageConstants {
       'https://res.cloudinary.com/dzrev1jgw/image/upload/v1744875421/11104_eucubh.jpg';
   static const String companyLogo =
       'https://cdn-icons-png.flaticon.com/512/281/281764.png';
+  static const String compannyLogo2 =
+      "https://cdn-icons-png.flaticon.com/512/3670/3670151.png";
+  static const String compannyLogo3 =
+      "https://cdn-icons-png.flaticon.com/512/733/733547.png";
+  static const String compannyLogo4 =
+      "https://cdn-icons-png.flaticon.com/512/14079/14079391.png";
 }
 
-
 class MyImage {
-  static const base_assets = 'assets/images'; 
+  static const base_assets = 'assets/images';
   static const fragment_bg1 = '$base_assets/frag1.png';
   static const fragment_bg2 = '$base_assets/frag2.png';
   static const fragment_bg3 = '$base_assets/frag3.png';
@@ -34,4 +39,3 @@ class MyImage {
   static const fragment_bg10 = '$base_assets/frag10.png';
   static const fragment_bg11 = '$base_assets/frag11.png';
 }
-
