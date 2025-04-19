@@ -67,8 +67,13 @@ class _PopularjobcardState extends State<Popularjobcard> {
           width: double.infinity,
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
           decoration: BoxDecoration(
-            color: ColorConstants.bgTransparent,
             borderRadius: const BorderRadius.all(Radius.circular(15)),
+            gradient:  LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: <Color>[
+              const Color.fromARGB(255, 202, 238, 255),const Color.fromARGB(255, 82, 187, 252)
+            ])
           ),
           child: Row(
             spacing: 10,
@@ -89,7 +94,7 @@ class _PopularjobcardState extends State<Popularjobcard> {
                   fontSize: 17, text: widget.job.title,
                   fontWeight: FontWeight.w400),
                 CustomTitle(
-                  color: ColorConstants.textColor3, 
+                  color: const Color.fromARGB(255, 114, 114, 114), 
                   fontSize: 12, text: widget.job.companyName,
                   fontWeight: FontWeight.w200),
                 ],
@@ -105,7 +110,7 @@ class _PopularjobcardState extends State<Popularjobcard> {
                   fontSize: 16, text: widget.job.salary,
                   fontWeight: FontWeight.w400),
                 CustomTitle(
-                  color: ColorConstants.textColor3, 
+                  color: const Color.fromARGB(255, 114, 114, 114), 
                   fontSize: 12, text: "USA",
                   fontWeight: FontWeight.w400),
 
