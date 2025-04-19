@@ -17,4 +17,5 @@ class ColorConstants {
   static const textColor2 = Color.fromRGBO(255, 255, 255, 1);
   static const textColor3 = Color.fromARGB(255, 144, 144, 144);
   static const bgGray = Color.fromARGB(255, 247, 246, 246);
+  static const bgTransparent = Color.fromARGB(255, 250, 247, 247);
 }

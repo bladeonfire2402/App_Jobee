@@ -44,7 +44,7 @@ class FeaturedJobCard extends StatelessWidget {
           ),
           decoration: BoxDecoration(
             color: controller.bgCardColor.value,  // Use reactive background color
-            borderRadius: const BorderRadius.all(Radius.circular(12)),
+            borderRadius: const BorderRadius.all(Radius.circular(26)),
           ),
           child: Column(
             children: [
@@ -56,7 +56,7 @@ class FeaturedJobCard extends StatelessWidget {
                     padding: EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       color: ColorConstants.textColor2,
-                      borderRadius: BorderRadius.circular(12)
+                      borderRadius: BorderRadius.circular(20)
                     ),
                     child: Image(
                       fit: BoxFit.fill,

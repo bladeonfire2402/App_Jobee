@@ -67,8 +67,8 @@ class _PopularjobcardState extends State<Popularjobcard> {
           width: double.infinity,
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
           decoration: BoxDecoration(
-            color: ColorConstants.bgGray,
-            borderRadius: const BorderRadius.all(Radius.circular(12)),
+            color: ColorConstants.bgTransparent,
+            borderRadius: const BorderRadius.all(Radius.circular(15)),
           ),
           child: Row(
             spacing: 10,

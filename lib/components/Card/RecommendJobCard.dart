@@ -68,7 +68,7 @@ class _RecommendjobcardState extends State<Recommendjobcard> {
           padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
           decoration: BoxDecoration(
             color: bgColor,
-            borderRadius: const BorderRadius.all(Radius.circular(12)),
+            borderRadius: const BorderRadius.all(Radius.circular(20)),
           ),
           child: Column(
             spacing: 7,
