@@ -15,6 +15,11 @@ class ImageConstants {
       'https://res.cloudinary.com/dzrev1jgw/image/upload/v1744875421/6673_wmbjtw.jpg';
   static const String FailVerify =
       'https://res.cloudinary.com/dzrev1jgw/image/upload/v1744875421/11104_eucubh.jpg';
-  static const String companyLogo = 
-  'https://cdn-icons-png.flaticon.com/512/281/281764.png';
+  static const String companyLogo =
+      'https://cdn-icons-png.flaticon.com/512/281/281764.png';
+}
+
+class MyImage {
+  static const base_assets = 'assets/imges';
+  static const fragment_bg = '$base_assets/igm.png';
 }
