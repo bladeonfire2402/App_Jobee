@@ -23,7 +23,6 @@ class Homescreen extends StatelessWidget {
             children: [
               //Phần chào người dùng 
               Headerhome(userName: "Alan Nguyen", avatar:ImageConstants.avatar),
-              
               SizedBox(height: 20,),
 
               //Phần Searchbar

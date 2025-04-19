@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:my_app_test/Controller/bottomNav__controller.dart';
 import 'package:my_app_test/Utils/Constants/color__constant.dart';
 import 'package:my_app_test/screens/HomeScreen/HomeScreen.dart';
+import 'package:my_app_test/screens/NotificationScreens/NotificationScreen.dart';
 
 class Clientlayout extends StatefulWidget {
   @override
@@ -40,7 +41,7 @@ class _ClientlayoutState extends State<Clientlayout> {
           case 0:
             return Homescreen();
           case 1:
-            return _buildNotificationsPage();
+            return NotificationScreen();
           case 2:
             return _buildBookmarkPage();
           case 3:

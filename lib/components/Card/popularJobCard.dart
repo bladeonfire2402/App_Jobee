@@ -68,6 +68,14 @@ class _PopularjobcardState extends State<Popularjobcard> {
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
           decoration: BoxDecoration(
             borderRadius: const BorderRadius.all(Radius.circular(15)),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withValues(alpha: 0.3),
+                spreadRadius: 1,
+                blurRadius: 2,
+                offset: Offset(0, 3), // changes position of shadow
+              ),
+            ],
             gradient:  LinearGradient(
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
