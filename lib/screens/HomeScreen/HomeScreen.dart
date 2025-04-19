@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:my_app_test/Utils/Constants/image__constants.dart';
 import 'package:my_app_test/components/HomeScreenComponents/featureHome.dart';
 import 'package:my_app_test/components/HomeScreenComponents/headerHome.dart';
+import 'package:my_app_test/components/HomeScreenComponents/recommendHome.dart';
 import 'package:my_app_test/components/HomeScreenComponents/searchHome.dart';
 
 class Homescreen extends StatelessWidget {
@@ -28,10 +29,15 @@ class Homescreen extends StatelessWidget {
               Searchhome(),
 
               
-              SizedBox(height: 45,),
+              SizedBox(height: 30,),
 
               //Phần feature 
               FeatureHome(),
+
+              SizedBox(height: 20,),
+
+              //Phần recommendJob
+              RecommendHome()
               
 
 
