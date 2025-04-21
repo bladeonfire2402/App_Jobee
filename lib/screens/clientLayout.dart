@@ -3,15 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_app_test/Controller/bottomNav__controller.dart';
 import 'package:my_app_test/Utils/Constants/color__constant.dart';
+import 'package:my_app_test/Utils/Data/job_Data.dart';
+import 'package:my_app_test/models/JobModels/JobModel.dart';
 import 'package:my_app_test/screens/HomeScreen/HomeScreen.dart';
+import 'package:my_app_test/screens/JobDetailScreen/JobDetailScreen.dart';
 import 'package:my_app_test/screens/NotificationScreens/NotificationScreen.dart';
 
 class Clientlayout extends StatefulWidget {
   @override
   _ClientlayoutState createState() => _ClientlayoutState();
 }
-
-
 
 class _ClientlayoutState extends State<Clientlayout> {
   final BottomNavigationController c = Get.put(BottomNavigationController());
@@ -20,17 +21,26 @@ class _ClientlayoutState extends State<Clientlayout> {
 
   @override
   Widget build(BuildContext context) {
+    JobModel job = JobData.jobList[0];
     return Scaffold(
       bottomNavigationBar: CurvedNavigationBar(
         color: ColorConstants.primaryColor,
         backgroundColor: ColorConstants.textColor2,
         key: _bottomNavigationKey,
         items: <Widget>[
-          Icon(Icons.home, size: 30,color: ColorConstants.textColor2,),
-          Icon(Icons.notifications, size: 30,color: ColorConstants.textColor2),
-          Icon(Icons.bookmark, size: 30,color: ColorConstants.textColor2),
-          Icon(Icons.category_outlined, size: 30,color: ColorConstants.textColor2),
-          Icon(Icons.account_circle_sharp,size: 30,color: ColorConstants.textColor2,)
+          Icon(Icons.home, size: 30, color: ColorConstants.textColor2),
+          Icon(Icons.notifications, size: 30, color: ColorConstants.textColor2),
+          Icon(Icons.bookmark, size: 30, color: ColorConstants.textColor2),
+          Icon(
+            Icons.category_outlined,
+            size: 30,
+            color: ColorConstants.textColor2,
+          ),
+          Icon(
+            Icons.account_circle_sharp,
+            size: 30,
+            color: ColorConstants.textColor2,
+          ),
         ],
         onTap: (index) {
           c.swap(index);
@@ -40,7 +50,8 @@ class _ClientlayoutState extends State<Clientlayout> {
         // Using Obx to listen for changes in the page index
         switch (c.page) {
           case 0:
-            return Homescreen();
+            return JobDetailScreen(job:  job,);
+            //return Homescreen();
           case 1:
             return NotificationScreen();
           case 2:
