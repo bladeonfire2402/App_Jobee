@@ -31,17 +31,10 @@ class NewactivityNotifiy extends StatelessWidget {
             fontWeight: FontWeight.w400,
           ),
 
+            
+
           //Fix cái list view
-          Container(
-            height: double.maxFinite,
-            width: double.maxFinite,
-            child: ListView.builder(
-              itemCount: 2,
-              itemBuilder: ((context, index) {
-                return NotifcationCard(notification: notification,);
-              }),
-            ),
-          ),
+          
         ],
       ),
     );
