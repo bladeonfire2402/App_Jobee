@@ -30,6 +30,7 @@ class _ClientlayoutState extends State<Clientlayout> {
           Icon(Icons.notifications, size: 30,color: ColorConstants.textColor2),
           Icon(Icons.bookmark, size: 30,color: ColorConstants.textColor2),
           Icon(Icons.category_outlined, size: 30,color: ColorConstants.textColor2),
+          Icon(Icons.account_circle_sharp,size: 30,color: ColorConstants.textColor2,)
         ],
         onTap: (index) {
           c.swap(index);

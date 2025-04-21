@@ -10,6 +10,8 @@ class NewactivityNotifiy extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      height: 200,
+      width: 200,
       child: Column(
         children: [
           CustomTitle(
@@ -18,7 +20,10 @@ class NewactivityNotifiy extends StatelessWidget {
             text: "New activity",
             fontWeight: FontWeight.w400,
           ),
+
+          //Fix cái list view
           ListView.builder(
+            
             itemBuilder: ((context, index) {
               return Container();
             }),
