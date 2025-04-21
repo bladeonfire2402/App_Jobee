@@ -10,9 +10,10 @@ class NewactivityNotifiy extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
-      width: 200,
+      height: double.maxFinite,
+      width: double.infinity,
       child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           CustomTitle(
             color: ColorConstants.fourthlyColor,
@@ -22,11 +23,19 @@ class NewactivityNotifiy extends StatelessWidget {
           ),
 
           //Fix cái list view
-          ListView.builder(
-            
-            itemBuilder: ((context, index) {
-              return Container();
-            }),
+          Container(
+            height: 200,
+            width: double.infinity,
+            child: ListView.builder(
+              itemCount: 2,
+              itemBuilder: ((context, index) {
+                return Container(
+                  height: 100,
+                  width: 100,
+                  child: Text("Bruh"),
+                );
+              }),
+            ),
           ),
         ],
       ),

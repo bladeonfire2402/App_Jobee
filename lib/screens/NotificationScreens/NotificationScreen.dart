@@ -19,7 +19,7 @@ const NotificationScreen({ Key? key }) : super(key: key);
             SizedBox(height: 10,),
             Align(
               alignment: Alignment.center,
-              child: CustomTitle(color: ColorConstants.textColor, fontSize: 24, text: "Notification", fontWeight: FontWeight.w600),
+              child: CustomTitle(color: ColorConstants.textColor, fontSize: 20, text: "Notification", fontWeight: FontWeight.w600),
             ),
 
             NewactivityNotifiy(),
