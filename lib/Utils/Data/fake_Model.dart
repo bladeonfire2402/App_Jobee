@@ -7,3 +7,5 @@ class NotificationModel {
 
   NotificationModel({required this.name, required this.companyLogo, required this.receiverUser, required this.Title, required this.content});
 }
+
+
