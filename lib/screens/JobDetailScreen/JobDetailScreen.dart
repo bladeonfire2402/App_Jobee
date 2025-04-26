@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:my_app_test/Controller/fragment__controler.dart';
 import 'package:my_app_test/Utils/Constants/color__constant.dart';
 import 'package:my_app_test/Utils/Constants/image__constants.dart';
-import 'package:my_app_test/models/JobModels/JobModel.dart';
+import 'package:my_app_test/models/JobModels/jobModel.dart';
 import 'dart:math'; // Đảm bảo import đúng thư viện
 
 class JobDetailScreen extends StatelessWidget {
@@ -21,169 +21,17 @@ class JobDetailScreen extends StatelessWidget {
     final FragmentController fragmentController = Get.put(FragmentController());
 
     // Thêm các hình ảnh fragment động
-    List<Widget> buildFragment1() {
-      List<Widget> fragments = [];
-      Random random = Random();
-
-      for (int i = 0; i < 3; i++) {
-        // Cập nhật vị trí
-        int randomDouble = random.nextInt(300);
-        int randomDob = random.nextInt(280);
-        fragmentController.setNewLocation(
-          x + randomDouble,
-          y + randomDob,
-        );
-
-        fragments.add(
-          Positioned(
-            top: fragmentController.x,
-            left: fragmentController.y,
-            child: Opacity(
-              opacity: 0.4,
-              child: Image.asset(width: 20, height: 20, MyImage.fragment_bg1)),
-          ),
-        );
-      }
-      return fragments;
-    }
-
-    List<Widget> buildFragment2() {
-      List<Widget> fragments = [];
-      Random random = Random();
-
-      for (int i = 0; i < 3; i++) {
-        // Cập nhật vị trí
-        int randomDouble = random.nextInt(300);
-        int randomDob = random.nextInt(280);
-        fragmentController.setNewLocation(
-          x + randomDouble,
-          y + randomDob,
-        );
-
-        fragments.add(
-          Positioned(
-            top: fragmentController.x,
-            left: fragmentController.y,
-            child: Opacity(
-               opacity: 0.4,
-              child: Image.asset(width: 20, height: 20, MyImage.fragment_bg2)),
-          ),
-        );
-      }
-      return fragments;
-    }
-
-    List<Widget> buildFragment3() {
-      List<Widget> fragments = [];
-      Random random = Random();
-
-      for (int i = 0; i < 3; i++) {
-        // Cập nhật vị trí
-        int randomDouble = random.nextInt(300);
-        int randomDob = random.nextInt(280);
-        fragmentController.setNewLocation(
-          x + randomDouble,
-          y + randomDob,
-        );
-
-        fragments.add(
-          Positioned(
-            top: fragmentController.x,
-            left: fragmentController.y,
-            child: Opacity(
-               opacity: 0.4,
-              child: Image.asset(width: 20, height: 20, MyImage.fragment_bg3)),
-          ),
-        );
-      }
-      return fragments;
-    }
-
-    List<Widget> buildFragment4() {
-      List<Widget> fragments = [];
-      Random random = Random();
-
-      for (int i = 0; i < 3; i++) {
-        // Cập nhật vị trí
-        int randomDouble = random.nextInt(300);
-        int randomDob = random.nextInt(280);
-        fragmentController.setNewLocation(
-          x + randomDouble,
-          y + randomDob,
-        );
-
-        fragments.add(
-          Positioned(
-            top: fragmentController.x,
-            left: fragmentController.y,
-            child: Opacity(
-               opacity: 0.4,
-              child: Image.asset(width: 20, height: 20, MyImage.fragment_bg4)),
-          ),
-        );
-      }
-      return fragments;
-    }
-
-    List<Widget> buildFragment5() {
-      List<Widget> fragments = [];
-      Random random = Random();
-
-      for (int i = 0; i < 3; i++) {
-        // Cập nhật vị trí
-        int randomDouble = random.nextInt(300);
-        int randomDob = random.nextInt(280);
-        fragmentController.setNewLocation(
-          x + randomDouble,
-          y + randomDob,
-        );
-
-        fragments.add(
-          Positioned(
-            top: fragmentController.x,
-            left: fragmentController.y,
-            child: Opacity(
-               opacity: 0.4,
-              child: Image.asset(width: 20, height: 20, MyImage.fragment_bg5)),
-          ),
-        );
-      }
-      return fragments;
-    }
-
-
-    List<Widget> buildFragment6() {
-      List<Widget> fragments = [];
-      Random random = Random();
-
-      for (int i = 0; i < 3; i++) {
-        // Cập nhật vị trí
-        int randomDouble = random.nextInt(300);
-        int randomDob = random.nextInt(280);
-        fragmentController.setNewLocation(
-          x + randomDouble,
-          y + randomDob,
-        );
-
-        fragments.add(
-          Positioned(
-            top: fragmentController.x,
-            left: fragmentController.y,
-            child: Opacity(
-              opacity: 0.4,
-              child: Image.asset(width: 20, height: 20, MyImage.fragment_bg6)),
-          ),
-        );
-      }
-      return fragments;
-    }
-
-
-
+    List<Widget> fragList1 = [];
+    List<Widget> fragList2 = [];
+    List<Widget> fragList3 = [];
+    List<Widget> fragList4 = [];
+    List<Widget> fragList5 = [];
+    List<Widget> fragList6 = [];
+    List<Widget> fragList7 = [];
+    List<Widget> fragList8 = [];
+    List<Widget> fragList9 = [];
+    List<Widget> fragList10 = [];
     
-
-
-
 
     return Scaffold(
       body: SafeArea(
@@ -209,15 +57,18 @@ class JobDetailScreen extends StatelessWidget {
                           ),
                         ),
                       ),
-                      
-                      // Thêm các fragment động vào Stack
-                      ...buildFragment1(),
-                      ...buildFragment2(),
-                      ...buildFragment3(),
-                      ...buildFragment4(),
-                      ...buildFragment5(),
-                      ...buildFragment6(),
 
+                      // Thêm các fragment động vào Stack
+                      ...fragmentController.buildFragment(fragmentController, MyImage.fragment_bg1, x, y, fragList1),
+                      ...fragmentController.buildFragment(fragmentController, MyImage.fragment_bg2, x, y, fragList2),
+                      ...fragmentController.buildFragment(fragmentController, MyImage.fragment_bg3, x, y, fragList3),
+                      ...fragmentController.buildFragment(fragmentController, MyImage.fragment_bg4, x, y, fragList4),
+                      ...fragmentController.buildFragment(fragmentController, MyImage.fragment_bg5, x, y, fragList5),
+                      ...fragmentController.buildFragment(fragmentController, MyImage.fragment_bg6, x, y, fragList6),
+                      ...fragmentController.buildFragment(fragmentController, MyImage.fragment_bg7, x, y, fragList7),
+                      ...fragmentController.buildFragment(fragmentController, MyImage.fragment_bg8, x, y, fragList8),
+                      ...fragmentController.buildFragment(fragmentController, MyImage.fragment_bg11, x, y, fragList9),
+                      ...fragmentController.buildFragment(fragmentController, MyImage.fragment_bg10, x, y, fragList10),        
                     ],
                   ),
                 ),

@@ -5,7 +5,7 @@ import 'package:my_app_test/Utils/Constants/color__constant.dart';
 import 'package:my_app_test/Utils/Constants/image__constants.dart';
 import 'package:my_app_test/components/ImageComponents/customImage.dart';
 import 'package:my_app_test/components/TitleComponents/customTitle.dart';
-import 'package:my_app_test/models/JobModels/JobModel.dart';
+import 'package:my_app_test/models/JobModels/jobModel.dart';
 
 class Recommendjobcard extends StatefulWidget {
   final JobModel job;

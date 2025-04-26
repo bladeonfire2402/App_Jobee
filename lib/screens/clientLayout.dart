@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:my_app_test/Controller/bottomNav__controller.dart';
 import 'package:my_app_test/Utils/Constants/color__constant.dart';
 import 'package:my_app_test/Utils/Data/job_Data.dart';
-import 'package:my_app_test/models/JobModels/JobModel.dart';
+import 'package:my_app_test/models/JobModels/jobModel.dart';
 import 'package:my_app_test/screens/HomeScreen/HomeScreen.dart';
 import 'package:my_app_test/screens/JobDetailScreen/JobDetailScreen.dart';
 import 'package:my_app_test/screens/NotificationScreens/NotificationScreen.dart';

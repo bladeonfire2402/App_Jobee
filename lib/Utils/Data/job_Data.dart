@@ -1,7 +1,7 @@
 //Lưu dữ liệu cứng để Render tạm
 
 import 'package:my_app_test/Utils/Constants/image__constants.dart';
-import 'package:my_app_test/models/JobModels/JobModel.dart';
+import 'package:my_app_test/models/JobModels/jobModel.dart';
 
 class JobData {
   static List<JobModel> jobList = [
