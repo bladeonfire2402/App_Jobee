@@ -8,14 +8,15 @@
 
 ---
 
-## 📌 About Product_VI
+## 📌 About Jobee work app
 
-**Product_VI App** is a simple Flutter application designed with four main screens to display:
+**Jobee work app** is a simple Flutter application designed with manys screens to display:
 
-- Product List Page
-- Create Product Page
-- Pagination List Products Page
-- Product Detail
+- Home screen
+- Auth screens
+- Intro screens
+- Verify Mail screens
+- Splash screen
 
 This project was developed by me
 
@@ -24,21 +25,25 @@ This project was developed by me
 ## 📸 Screenshots
 
 <p float="left">
-  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753982311/Screenshot_2025-08-01-00-16-44-075_com.example.banhat_jydayf.jpg" width="250" />
-  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753982312/Screenshot_2025-08-01-00-16-56-883_com.example.banhat_fnrm4x.jpg" width="250" />
-  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753982311/Screenshot_2025-08-01-00-15-19-317_com.example.banhat_mp8tci.jpg" width="250" />
-  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753982311/Screenshot_2025-08-01-00-16-49-665_com.example.banhat_vea9v8.jpg" width="250" />
-  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753982310/Screenshot_2025-08-01-00-15-22-544_com.example.banhat_me9g5n.jpg" width="250" />
+  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753985294/Screenshot_2025-08-01-01-05-57-407_com.example.my_app_test_awdfoc.jpg" width="250" />
+  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753985264/Screenshot_2025-08-01-01-03-49-031_com.example.my_app_test_etroxq.jpg" width="250" />
+  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753985265/Screenshot_2025-08-01-01-05-54-205_com.example.my_app_test_aw9cau.jpg" width="250" />
+  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753985265/Screenshot_2025-08-01-01-04-15-844_com.example.my_app_test_p0hpbh.jpg" width="250" />
+  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753985264/Screenshot_2025-08-01-01-03-27-817_com.example.my_app_test_fkx0oo.jpg" width="250" />
+  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753985264/Screenshot_2025-08-01-01-02-30-476_com.example.my_app_test_h3edyg.jpg" width="250" />
+  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753985264/Screenshot_2025-08-01-01-03-06-553_com.example.my_app_test_iytg3r.jpg" width="250" />
+  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753985264/Screenshot_2025-08-01-01-02-16-202_com.example.my_app_test_csknbo.jpg" width="250" />
+  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753985264/Screenshot_2025-08-01-01-02-25-607_com.example.my_app_test_pu2knf.jpg" width="250" />
+  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753985264/Screenshot_2025-08-01-01-02-28-325_com.example.my_app_test_mq13qa.jpg" width="250" />
+  <img src="https://res.cloudinary.com/drkjgtjx7/image/upload/v1753985263/Screenshot_2025-08-01-01-02-21-832_com.example.my_app_test_ln2xb6.jpg" width="250" />
+  
 </p>
 
 ---
 
 ## ⚙️ Features
 
-- 🧑 Product Pages with input proucts limits to view
-- ✉️ Create Product form to add product, button to add images from links to view
-- 😂 Delete products by id
-- 💕 View Product by Id
+- 🧑 UI screens
 - ⛽ Overall state management by GetX
 - 🎨 Clean and beginner-friendly UI
 - 🌐 Responsive design (Web, Android, iOS supported)
